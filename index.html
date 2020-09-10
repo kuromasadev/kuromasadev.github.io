@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        #map {
+            width: 975px;
+            height: 797px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/multi-style-layer.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/ContinentalCoastline500m_0.js"></script>
+        <script src="data/ContinentalCoastline1k_1.js"></script>
+        <script src="data/wateredge_2.js"></script>
+        <script src="data/river_3.js"></script>
+        <script src="data/COASTLINE_4.js"></script>
+        <script src="data/waterbody_codes_5.js"></script>
+        <script src="data/HALFOCEAN_6.js"></script>
+        <script src="data/faultarea_7.js"></script>
+        <script src="data/continents_01_8.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[17.236047425399075,-49.22140731963745],[61.46680218227455,4.9125856092177]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        function pop_ContinentalCoastline500m_0(feature, layer) {
+        }
+
+        function style_ContinentalCoastline500m_0_0() {
+            return {
+                pane: 'pane_ContinentalCoastline500m_0',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(34,158,162,0.4)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_ContinentalCoastline500m_0');
+        map.getPane('pane_ContinentalCoastline500m_0').style.zIndex = 400;
+        map.getPane('pane_ContinentalCoastline500m_0').style['mix-blend-mode'] = 'normal';
+        var layer_ContinentalCoastline500m_0 = new L.geoJson(json_ContinentalCoastline500m_0, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_ContinentalCoastline500m_0',
+            layerName: 'layer_ContinentalCoastline500m_0',
+            pane: 'pane_ContinentalCoastline500m_0',
+            onEachFeature: pop_ContinentalCoastline500m_0,
+            style: style_ContinentalCoastline500m_0_0,
+        });
+        bounds_group.addLayer(layer_ContinentalCoastline500m_0);
+        map.addLayer(layer_ContinentalCoastline500m_0);
+        function pop_ContinentalCoastline1k_1(feature, layer) {
+        }
+
+        function style_ContinentalCoastline1k_1_0() {
+            return {
+                pane: 'pane_ContinentalCoastline1k_1',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(135,206,207,0.5568627450980392)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_ContinentalCoastline1k_1');
+        map.getPane('pane_ContinentalCoastline1k_1').style.zIndex = 401;
+        map.getPane('pane_ContinentalCoastline1k_1').style['mix-blend-mode'] = 'normal';
+        var layer_ContinentalCoastline1k_1 = new L.geoJson(json_ContinentalCoastline1k_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_ContinentalCoastline1k_1',
+            layerName: 'layer_ContinentalCoastline1k_1',
+            pane: 'pane_ContinentalCoastline1k_1',
+            onEachFeature: pop_ContinentalCoastline1k_1,
+            style: style_ContinentalCoastline1k_1_0,
+        });
+        bounds_group.addLayer(layer_ContinentalCoastline1k_1);
+        map.addLayer(layer_ContinentalCoastline1k_1);
+        function pop_wateredge_2(feature, layer) {
+        }
+
+        function style_wateredge_2_0() {
+            return {
+                pane: 'pane_wateredge_2',
+                opacity: 1,
+                color: 'rgba(133,182,111,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_wateredge_2');
+        map.getPane('pane_wateredge_2').style.zIndex = 402;
+        map.getPane('pane_wateredge_2').style['mix-blend-mode'] = 'normal';
+        var layer_wateredge_2 = new L.geoJson(json_wateredge_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_wateredge_2',
+            layerName: 'layer_wateredge_2',
+            pane: 'pane_wateredge_2',
+            onEachFeature: pop_wateredge_2,
+            style: style_wateredge_2_0,
+        });
+        bounds_group.addLayer(layer_wateredge_2);
+        map.addLayer(layer_wateredge_2);
+        function pop_river_3(feature, layer) {
+        }
+
+        function style_river_3_0() {
+            return {
+                pane: 'pane_river_3',
+                opacity: 1,
+                color: 'rgba(164,113,88,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_river_3');
+        map.getPane('pane_river_3').style.zIndex = 403;
+        map.getPane('pane_river_3').style['mix-blend-mode'] = 'normal';
+        var layer_river_3 = new L.geoJson(json_river_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_river_3',
+            layerName: 'layer_river_3',
+            pane: 'pane_river_3',
+            onEachFeature: pop_river_3,
+            style: style_river_3_0,
+        });
+        bounds_group.addLayer(layer_river_3);
+        map.addLayer(layer_river_3);
+        function pop_COASTLINE_4(feature, layer) {
+        }
+
+        function style_COASTLINE_4_0() {
+            return {
+                pane: 'pane_COASTLINE_4',
+                opacity: 1,
+                color: 'rgba(145,82,45,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_COASTLINE_4');
+        map.getPane('pane_COASTLINE_4').style.zIndex = 404;
+        map.getPane('pane_COASTLINE_4').style['mix-blend-mode'] = 'normal';
+        var layer_COASTLINE_4 = new L.geoJson(json_COASTLINE_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_COASTLINE_4',
+            layerName: 'layer_COASTLINE_4',
+            pane: 'pane_COASTLINE_4',
+            onEachFeature: pop_COASTLINE_4,
+            style: style_COASTLINE_4_0,
+        });
+        bounds_group.addLayer(layer_COASTLINE_4);
+        map.addLayer(layer_COASTLINE_4);
+        function pop_waterbody_codes_5(feature, layer) {
+        }
+
+        function style_waterbody_codes_5_0() {
+            return {
+                pane: 'pane_waterbody_codes_5',
+                radius: 0.0,
+                stroke: false,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(145,82,45,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_waterbody_codes_5');
+        map.getPane('pane_waterbody_codes_5').style.zIndex = 405;
+        map.getPane('pane_waterbody_codes_5').style['mix-blend-mode'] = 'normal';
+        var layer_waterbody_codes_5 = new L.geoJson(json_waterbody_codes_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_waterbody_codes_5',
+            layerName: 'layer_waterbody_codes_5',
+            pane: 'pane_waterbody_codes_5',
+            onEachFeature: pop_waterbody_codes_5,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_waterbody_codes_5_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_waterbody_codes_5);
+        map.addLayer(layer_waterbody_codes_5);
+        function pop_HALFOCEAN_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_HALFOCEAN_6_0() {
+            return {
+                pane: 'pane_HALFOCEAN_6',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(124,230,241,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_HALFOCEAN_6');
+        map.getPane('pane_HALFOCEAN_6').style.zIndex = 406;
+        map.getPane('pane_HALFOCEAN_6').style['mix-blend-mode'] = 'normal';
+        var layer_HALFOCEAN_6 = new L.geoJson(json_HALFOCEAN_6, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_HALFOCEAN_6',
+            layerName: 'layer_HALFOCEAN_6',
+            pane: 'pane_HALFOCEAN_6',
+            onEachFeature: pop_HALFOCEAN_6,
+            style: style_HALFOCEAN_6_0,
+        });
+        bounds_group.addLayer(layer_HALFOCEAN_6);
+        map.addLayer(layer_HALFOCEAN_6);
+        function pop_faultarea_7(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['FEATURE_ID'] !== null ? autolinker.link(feature.properties['FEATURE_ID'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PLATEID1'] !== null ? autolinker.link(feature.properties['PLATEID1'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['GPGIM_TYPE'] !== null ? autolinker.link(feature.properties['GPGIM_TYPE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TYPE'] !== null ? autolinker.link(feature.properties['TYPE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['FROMAGE'] !== null ? autolinker.link(feature.properties['FROMAGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TOAGE'] !== null ? autolinker.link(feature.properties['TOAGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['NAME'] !== null ? autolinker.link(feature.properties['NAME'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['IMPORT_AGE'] !== null ? autolinker.link(feature.properties['IMPORT_AGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['DESCR'] !== null ? autolinker.link(feature.properties['DESCR'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PLATEID2'] !== null ? autolinker.link(feature.properties['PLATEID2'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RECON_METH'] !== null ? autolinker.link(feature.properties['RECON_METH'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['L_PLATE'] !== null ? autolinker.link(feature.properties['L_PLATE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['R_PLATE'] !== null ? autolinker.link(feature.properties['R_PLATE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SPREAD_ASY'] !== null ? autolinker.link(feature.properties['SPREAD_ASY'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_faultarea_7_0() {
+            return {
+                pane: 'pane_faultarea_7',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(163,153,173,1.0)',
+                interactive: false,
+            }
+        }
+        function style_faultarea_7_1() {
+            return {
+                pane: 'pane_faultarea_7',
+                opacity: 1,
+                color: 'rgba(163,153,173,1.0)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1.0,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        var pattern_faultarea_7_2 = new L.StripePattern({
+            weight: 0.5,
+            spaceWeight: 5.0,
+            color: '#6d6068',
+            opacity: 1.0,
+            spaceOpacity: 0,
+            angle: 315
+        });
+        pattern_faultarea_7_2.addTo(map);
+        function style_faultarea_7_2() {
+            return {
+                pane: 'pane_faultarea_7',
+                stroke: false,
+                fillOpacity: 1,
+                fillPattern: pattern_faultarea_7_2,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_faultarea_7');
+        map.getPane('pane_faultarea_7').style.zIndex = 407;
+        map.getPane('pane_faultarea_7').style['mix-blend-mode'] = 'normal';
+        var layer_faultarea_7 = new L.geoJson.multiStyle(json_faultarea_7, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_faultarea_7',
+            layerName: 'layer_faultarea_7',
+            pane: 'pane_faultarea_7',
+            onEachFeature: pop_faultarea_7,
+            styles: [style_faultarea_7_0,style_faultarea_7_1,style_faultarea_7_2,]
+        });
+        bounds_group.addLayer(layer_faultarea_7);
+        function pop_continents_01_8(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['FEATURE_ID'] !== null ? autolinker.link(feature.properties['FEATURE_ID'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PLATEID1'] !== null ? autolinker.link(feature.properties['PLATEID1'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['GPGIM_TYPE'] !== null ? autolinker.link(feature.properties['GPGIM_TYPE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TYPE'] !== null ? autolinker.link(feature.properties['TYPE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['FROMAGE'] !== null ? autolinker.link(feature.properties['FROMAGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['TOAGE'] !== null ? autolinker.link(feature.properties['TOAGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['NAME'] !== null ? autolinker.link(feature.properties['NAME'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['IMPORT_AGE'] !== null ? autolinker.link(feature.properties['IMPORT_AGE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['DESCR'] !== null ? autolinker.link(feature.properties['DESCR'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['PLATEID2'] !== null ? autolinker.link(feature.properties['PLATEID2'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RECON_METH'] !== null ? autolinker.link(feature.properties['RECON_METH'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['L_PLATE'] !== null ? autolinker.link(feature.properties['L_PLATE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['R_PLATE'] !== null ? autolinker.link(feature.properties['R_PLATE'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['SPREAD_ASY'] !== null ? autolinker.link(feature.properties['SPREAD_ASY'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_continents_01_8_0() {
+            return {
+                pane: 'pane_continents_01_8',
+                stroke: false, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(214,214,166,0.7019607843137254)',
+                interactive: false,
+            }
+        }
+        function style_continents_01_8_1() {
+            return {
+                pane: 'pane_continents_01_8',
+                opacity: 1,
+                color: 'rgba(214,214,166,0.7019607843137254)',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                weight: 1,
+                fillOpacity: 0,
+                interactive: false,
+            }
+        }
+        map.createPane('pane_continents_01_8');
+        map.getPane('pane_continents_01_8').style.zIndex = 408;
+        map.getPane('pane_continents_01_8').style['mix-blend-mode'] = 'normal';
+        var layer_continents_01_8 = new L.geoJson.multiStyle(json_continents_01_8, {
+            attribution: '',
+            interactive: false,
+            dataVar: 'json_continents_01_8',
+            layerName: 'layer_continents_01_8',
+            pane: 'pane_continents_01_8',
+            onEachFeature: pop_continents_01_8,
+            styles: [style_continents_01_8_0,style_continents_01_8_1,]
+        });
+        bounds_group.addLayer(layer_continents_01_8);
+        map.on("zoomend", function(e) {
+            if (map.getZoom() <= 9 && map.getZoom() >= 6) {
+                map.addLayer(layer_waterbody_codes_5);
+            } else if (map.getZoom() > 9 || map.getZoom() < 6) {
+                map.removeLayer(layer_waterbody_codes_5);
+            }
+        });
+            if (map.getZoom() <= 9 && map.getZoom() >= 6) {
+                map.addLayer(layer_waterbody_codes_5);
+            } else if (map.getZoom() > 9 || map.getZoom() < 6) {
+                map.removeLayer(layer_waterbody_codes_5);
+            }L.control.scale({position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}).addTo(map);
+        setBounds();
+        var i = 0;
+        layer_waterbody_codes_5.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['body name'] !== null?String('<div style="color: #000000; font-size: 14pt; font-family: \'OilBats\', sans-serif;">' + layer.feature.properties['body name']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_waterbody_codes_5'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        var i = 0;
+        layer_HALFOCEAN_6.eachLayer(function(layer) {
+            var context = {
+                feature: layer.feature,
+                variables: {}
+            };
+            layer.bindTooltip((layer.feature.properties['id'] !== null?String('<div style="color: #000000; font-size: 10pt; font-family: \'MS Shell Dlg 2\', sans-serif;">' + layer.feature.properties['id']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_HALFOCEAN_6'});
+            labels.push(layer);
+            totalMarkers += 1;
+              layer.added = true;
+              addLabel(layer, i);
+              i++;
+        });
+        resetLabels([layer_waterbody_codes_5,layer_HALFOCEAN_6]);
+        map.on("zoomend", function(){
+            resetLabels([layer_waterbody_codes_5,layer_HALFOCEAN_6]);
+        });
+        map.on("layeradd", function(){
+            resetLabels([layer_waterbody_codes_5,layer_HALFOCEAN_6]);
+        });
+        map.on("layerremove", function(){
+            resetLabels([layer_waterbody_codes_5,layer_HALFOCEAN_6]);
+        });
+        </script>
+    </body>
+</html>
