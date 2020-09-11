@@ -1,2 +1,0 @@
-# kuromasadev.github.io
- 
