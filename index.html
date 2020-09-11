@@ -36,11 +36,10 @@
         <script src="data/ContinentalCoastline500m_0.js"></script>
         <script src="data/ContinentalCoastline1k_1.js"></script>
         <script src="data/waterbody_codes_2.js"></script>
-        <script src="data/negativedepthcontours10_3.js"></script>
-        <script src="data/PoliticalAreaMap_4.js"></script>
-        <script src="data/States_5.js"></script>
-        <script src="data/faultarea_6.js"></script>
-        <script src="data/continents_01_7.js"></script>
+        <script src="data/PoliticalAreaMap_3.js"></script>
+        <script src="data/States_4.js"></script>
+        <script src="data/faultarea_5.js"></script>
+        <script src="data/continents_01_6.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
@@ -152,37 +151,7 @@
         });
         bounds_group.addLayer(layer_waterbody_codes_2);
         map.addLayer(layer_waterbody_codes_2);
-        function pop_negativedepthcontours10_3(feature, layer) {
-        }
-
-        function style_negativedepthcontours10_3_0() {
-            return {
-                pane: 'pane_negativedepthcontours10_3',
-                opacity: 1,
-                color: 'rgba(82,86,103,0.44313725490196076)',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                weight: 1.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_negativedepthcontours10_3');
-        map.getPane('pane_negativedepthcontours10_3').style.zIndex = 403;
-        map.getPane('pane_negativedepthcontours10_3').style['mix-blend-mode'] = 'normal';
-        var layer_negativedepthcontours10_3 = new L.geoJson(json_negativedepthcontours10_3, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_negativedepthcontours10_3',
-            layerName: 'layer_negativedepthcontours10_3',
-            pane: 'pane_negativedepthcontours10_3',
-            onEachFeature: pop_negativedepthcontours10_3,
-            style: style_negativedepthcontours10_3_0,
-        });
-        bounds_group.addLayer(layer_negativedepthcontours10_3);
-        map.addLayer(layer_negativedepthcontours10_3);
-        function pop_PoliticalAreaMap_4(feature, layer) {
+        function pop_PoliticalAreaMap_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
@@ -203,11 +172,11 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_PoliticalAreaMap_4_0(feature) {
+        function style_PoliticalAreaMap_3_0(feature) {
             switch(String(feature.properties['state'])) {
                 default:
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 opacity: 1,
                 color: 'rgba(247,247,247,1.0)',
                 dashArray: '',
@@ -222,7 +191,7 @@
                     break;
                 case 'Egyhad':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -232,7 +201,7 @@
                     break;
                 case 'Erecs':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -242,7 +211,7 @@
                     break;
                 case 'Gameineia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -252,7 +221,7 @@
                     break;
                 case 'Jastihars':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -262,7 +231,7 @@
                     break;
                 case 'Kencia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -272,7 +241,7 @@
                     break;
                 case 'Lacia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -282,7 +251,7 @@
                     break;
                 case 'Morciar':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -292,7 +261,7 @@
                     break;
                 case 'Morinsal':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -302,7 +271,7 @@
                     break;
                 case 'Talon':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -312,7 +281,7 @@
                     break;
                 case 'Tispers':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -322,7 +291,7 @@
                     break;
                 case 'Tor-Aerath':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -332,7 +301,7 @@
                     break;
                 case 'Ulag':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -342,7 +311,7 @@
                     break;
                 case 'Bangolia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -352,7 +321,7 @@
                     break;
                 case 'Turatonde':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -362,7 +331,7 @@
                     break;
                 case 'Oniakia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -372,7 +341,7 @@
                     break;
                 case 'Vasvarra':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -382,7 +351,7 @@
                     break;
                 case 'Wathesia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -392,7 +361,7 @@
                     break;
                 case 'Bogd':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -402,7 +371,7 @@
                     break;
                 case 'Agsenhian':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -412,7 +381,7 @@
                     break;
                 case 'Grengenia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -422,7 +391,7 @@
                     break;
                 case 'Axrigh':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -432,7 +401,7 @@
                     break;
                 case 'Csonlaszia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -442,7 +411,7 @@
                     break;
                 case 'Frieden':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -452,7 +421,7 @@
                     break;
                 case 'Kunhalas':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -462,7 +431,7 @@
                     break;
                 case 'Handine':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -472,7 +441,7 @@
                     break;
                 case 'Cytiumia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -482,7 +451,7 @@
                     break;
                 case 'Alborkia':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -492,7 +461,7 @@
                     break;
                 case 'Stuh':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -502,7 +471,7 @@
                     break;
                 case 'Buhkit':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -512,7 +481,7 @@
                     break;
                 case 'Gyeon':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -522,7 +491,7 @@
                     break;
                 case 'Muru':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -532,7 +501,7 @@
                     break;
                 case 'Shintoraha':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -542,7 +511,7 @@
                     break;
                 case 'Yeocheok':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -552,7 +521,7 @@
                     break;
                 case 'Shuria':
                     return {
-                pane: 'pane_PoliticalAreaMap_4',
+                pane: 'pane_PoliticalAreaMap_3',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -562,21 +531,21 @@
                     break;
             }
         }
-        map.createPane('pane_PoliticalAreaMap_4');
-        map.getPane('pane_PoliticalAreaMap_4').style.zIndex = 404;
-        map.getPane('pane_PoliticalAreaMap_4').style['mix-blend-mode'] = 'normal';
-        var layer_PoliticalAreaMap_4 = new L.geoJson(json_PoliticalAreaMap_4, {
+        map.createPane('pane_PoliticalAreaMap_3');
+        map.getPane('pane_PoliticalAreaMap_3').style.zIndex = 403;
+        map.getPane('pane_PoliticalAreaMap_3').style['mix-blend-mode'] = 'normal';
+        var layer_PoliticalAreaMap_3 = new L.geoJson(json_PoliticalAreaMap_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_PoliticalAreaMap_4',
-            layerName: 'layer_PoliticalAreaMap_4',
-            pane: 'pane_PoliticalAreaMap_4',
-            onEachFeature: pop_PoliticalAreaMap_4,
-            style: style_PoliticalAreaMap_4_0,
+            dataVar: 'json_PoliticalAreaMap_3',
+            layerName: 'layer_PoliticalAreaMap_3',
+            pane: 'pane_PoliticalAreaMap_3',
+            onEachFeature: pop_PoliticalAreaMap_3,
+            style: style_PoliticalAreaMap_3_0,
         });
-        bounds_group.addLayer(layer_PoliticalAreaMap_4);
-        map.addLayer(layer_PoliticalAreaMap_4);
-        function pop_States_5(feature, layer) {
+        bounds_group.addLayer(layer_PoliticalAreaMap_3);
+        map.addLayer(layer_PoliticalAreaMap_3);
+        function pop_States_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
@@ -599,9 +568,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_States_5_0() {
+        function style_States_4_0() {
             return {
-                pane: 'pane_States_5',
+                pane: 'pane_States_4',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -612,21 +581,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_States_5');
-        map.getPane('pane_States_5').style.zIndex = 405;
-        map.getPane('pane_States_5').style['mix-blend-mode'] = 'normal';
-        var layer_States_5 = new L.geoJson(json_States_5, {
+        map.createPane('pane_States_4');
+        map.getPane('pane_States_4').style.zIndex = 404;
+        map.getPane('pane_States_4').style['mix-blend-mode'] = 'normal';
+        var layer_States_4 = new L.geoJson(json_States_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_States_5',
-            layerName: 'layer_States_5',
-            pane: 'pane_States_5',
-            onEachFeature: pop_States_5,
-            style: style_States_5_0,
+            dataVar: 'json_States_4',
+            layerName: 'layer_States_4',
+            pane: 'pane_States_4',
+            onEachFeature: pop_States_4,
+            style: style_States_4_0,
         });
-        bounds_group.addLayer(layer_States_5);
-        map.addLayer(layer_States_5);
-        function pop_faultarea_6(feature, layer) {
+        bounds_group.addLayer(layer_States_4);
+        map.addLayer(layer_States_4);
+        function pop_faultarea_5(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['FEATURE_ID'] !== null ? autolinker.link(feature.properties['FEATURE_ID'].toLocaleString()) : '') + '</td>\
@@ -674,9 +643,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_faultarea_6_0() {
+        function style_faultarea_5_0() {
             return {
-                pane: 'pane_faultarea_6',
+                pane: 'pane_faultarea_5',
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -689,9 +658,9 @@
                 interactive: true,
             }
         }
-        function style_faultarea_6_1() {
+        function style_faultarea_5_1() {
             return {
-                pane: 'pane_faultarea_6',
+                pane: 'pane_faultarea_5',
                 opacity: 1,
                 color: 'rgba(163,153,173,1.0)',
                 dashArray: '',
@@ -702,7 +671,7 @@
                 interactive: true,
             }
         }
-        var pattern_faultarea_6_2 = new L.StripePattern({
+        var pattern_faultarea_5_2 = new L.StripePattern({
             weight: 0.5,
             spaceWeight: 5.0,
             color: '#6d6068',
@@ -710,30 +679,30 @@
             spaceOpacity: 0,
             angle: 315
         });
-        pattern_faultarea_6_2.addTo(map);
-        function style_faultarea_6_2() {
+        pattern_faultarea_5_2.addTo(map);
+        function style_faultarea_5_2() {
             return {
-                pane: 'pane_faultarea_6',
+                pane: 'pane_faultarea_5',
                 stroke: false,
                 fillOpacity: 1,
-                fillPattern: pattern_faultarea_6_2,
+                fillPattern: pattern_faultarea_5_2,
                 interactive: true,
             }
         }
-        map.createPane('pane_faultarea_6');
-        map.getPane('pane_faultarea_6').style.zIndex = 406;
-        map.getPane('pane_faultarea_6').style['mix-blend-mode'] = 'normal';
-        var layer_faultarea_6 = new L.geoJson.multiStyle(json_faultarea_6, {
+        map.createPane('pane_faultarea_5');
+        map.getPane('pane_faultarea_5').style.zIndex = 405;
+        map.getPane('pane_faultarea_5').style['mix-blend-mode'] = 'normal';
+        var layer_faultarea_5 = new L.geoJson.multiStyle(json_faultarea_5, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_faultarea_6',
-            layerName: 'layer_faultarea_6',
-            pane: 'pane_faultarea_6',
-            onEachFeature: pop_faultarea_6,
-            styles: [style_faultarea_6_0,style_faultarea_6_1,style_faultarea_6_2,]
+            dataVar: 'json_faultarea_5',
+            layerName: 'layer_faultarea_5',
+            pane: 'pane_faultarea_5',
+            onEachFeature: pop_faultarea_5,
+            styles: [style_faultarea_5_0,style_faultarea_5_1,style_faultarea_5_2,]
         });
-        bounds_group.addLayer(layer_faultarea_6);
-        function pop_continents_01_7(feature, layer) {
+        bounds_group.addLayer(layer_faultarea_5);
+        function pop_continents_01_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['FEATURE_ID'] !== null ? autolinker.link(feature.properties['FEATURE_ID'].toLocaleString()) : '') + '</td>\
@@ -781,9 +750,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_continents_01_7_0() {
+        function style_continents_01_6_0() {
             return {
-                pane: 'pane_continents_01_7',
+                pane: 'pane_continents_01_6',
                 stroke: false, 
                 fill: true,
                 fillOpacity: 1,
@@ -791,9 +760,9 @@
                 interactive: true,
             }
         }
-        function style_continents_01_7_1() {
+        function style_continents_01_6_1() {
             return {
-                pane: 'pane_continents_01_7',
+                pane: 'pane_continents_01_6',
                 opacity: 1,
                 color: 'rgba(214,214,166,0.7019607843137254)',
                 dashArray: '',
@@ -804,19 +773,19 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_continents_01_7');
-        map.getPane('pane_continents_01_7').style.zIndex = 407;
-        map.getPane('pane_continents_01_7').style['mix-blend-mode'] = 'normal';
-        var layer_continents_01_7 = new L.geoJson.multiStyle(json_continents_01_7, {
+        map.createPane('pane_continents_01_6');
+        map.getPane('pane_continents_01_6').style.zIndex = 406;
+        map.getPane('pane_continents_01_6').style['mix-blend-mode'] = 'normal';
+        var layer_continents_01_6 = new L.geoJson.multiStyle(json_continents_01_6, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_continents_01_7',
-            layerName: 'layer_continents_01_7',
-            pane: 'pane_continents_01_7',
-            onEachFeature: pop_continents_01_7,
-            styles: [style_continents_01_7_0,style_continents_01_7_1,]
+            dataVar: 'json_continents_01_6',
+            layerName: 'layer_continents_01_6',
+            pane: 'pane_continents_01_6',
+            onEachFeature: pop_continents_01_6,
+            styles: [style_continents_01_6_0,style_continents_01_6_1,]
         });
-        bounds_group.addLayer(layer_continents_01_7);
+        bounds_group.addLayer(layer_continents_01_6);
         map.on("zoomend", function(e) {
             if (map.getZoom() <= 9 && map.getZoom() >= 6) {
                 map.addLayer(layer_waterbody_codes_2);
@@ -830,27 +799,27 @@
                 map.removeLayer(layer_waterbody_codes_2);
             }
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/continents_01_7.png" /> continents_01': layer_continents_01_7,'<img src="legend/faultarea_6.png" /> fault area': layer_faultarea_6,'<img src="legend/States_5.png" /> States ': layer_States_5,'Political Area Map<br /><table><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Egyhad1.png" /></td><td>Egyhad</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Erecs2.png" /></td><td>Erecs</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Gameineia3.png" /></td><td>Gameineia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Jastihars4.png" /></td><td>Jastihars</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Kencia5.png" /></td><td>Kencia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Lacia6.png" /></td><td>Lacia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Morciar7.png" /></td><td>Morciar</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Morinsal8.png" /></td><td>Morinsal</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Talon9.png" /></td><td>Talon</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Tispers10.png" /></td><td>Tispers</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_TorAerath11.png" /></td><td>Tor-Aerath</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Ulag12.png" /></td><td>Ulag</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Bangolia13.png" /></td><td>Bangolia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Turatonde14.png" /></td><td>Turatonde</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Oniakia15.png" /></td><td>Oniakia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Vasvarra16.png" /></td><td>Vasvarra</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Wathesia17.png" /></td><td>Wathesia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Bogd18.png" /></td><td>Bogd</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Agsenhian19.png" /></td><td>Agsenhian</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Grengenia20.png" /></td><td>Grengenia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Axrigh21.png" /></td><td>Axrigh</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Csonlaszia22.png" /></td><td>Csonlaszia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Frieden23.png" /></td><td>Frieden</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Kunhalas24.png" /></td><td>Kunhalas</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Handine25.png" /></td><td>Handine</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Cytiumia26.png" /></td><td>Cytiumia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Alborkia27.png" /></td><td>Alborkia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Stuh28.png" /></td><td>Stuh</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Buhkit29.png" /></td><td>Buhkit</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Gyeon30.png" /></td><td>Gyeon</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Muru31.png" /></td><td>Muru</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Shintoraha32.png" /></td><td>Shintoraha</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Yeocheok33.png" /></td><td>Yeocheok</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_4_Shuria34.png" /></td><td>Shuria</td></tr></table>': layer_PoliticalAreaMap_4,'<img src="legend/negativedepthcontours10_3.png" /> negative depth contours-10': layer_negativedepthcontours10_3,'<img src="legend/waterbody_codes_2.png" /> waterbody_codes': layer_waterbody_codes_2,'<img src="legend/ContinentalCoastline1k_1.png" /> Continental Coastline 1k': layer_ContinentalCoastline1k_1,'<img src="legend/ContinentalCoastline500m_0.png" /> Continental Coastline 500m': layer_ContinentalCoastline500m_0,}).addTo(map);L.control.scale({position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/continents_01_6.png" /> continents_01': layer_continents_01_6,'<img src="legend/faultarea_5.png" /> fault area': layer_faultarea_5,'<img src="legend/States_4.png" /> States ': layer_States_4,'Political Area Map<br /><table><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_0.png" /></td><td></td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Egyhad1.png" /></td><td>Egyhad</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Erecs2.png" /></td><td>Erecs</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Gameineia3.png" /></td><td>Gameineia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Jastihars4.png" /></td><td>Jastihars</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Kencia5.png" /></td><td>Kencia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Lacia6.png" /></td><td>Lacia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Morciar7.png" /></td><td>Morciar</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Morinsal8.png" /></td><td>Morinsal</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Talon9.png" /></td><td>Talon</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Tispers10.png" /></td><td>Tispers</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_TorAerath11.png" /></td><td>Tor-Aerath</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Ulag12.png" /></td><td>Ulag</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Bangolia13.png" /></td><td>Bangolia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Turatonde14.png" /></td><td>Turatonde</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Oniakia15.png" /></td><td>Oniakia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Vasvarra16.png" /></td><td>Vasvarra</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Wathesia17.png" /></td><td>Wathesia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Bogd18.png" /></td><td>Bogd</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Agsenhian19.png" /></td><td>Agsenhian</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Grengenia20.png" /></td><td>Grengenia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Axrigh21.png" /></td><td>Axrigh</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Csonlaszia22.png" /></td><td>Csonlaszia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Frieden23.png" /></td><td>Frieden</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Kunhalas24.png" /></td><td>Kunhalas</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Handine25.png" /></td><td>Handine</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Cytiumia26.png" /></td><td>Cytiumia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Alborkia27.png" /></td><td>Alborkia</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Stuh28.png" /></td><td>Stuh</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Buhkit29.png" /></td><td>Buhkit</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Gyeon30.png" /></td><td>Gyeon</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Muru31.png" /></td><td>Muru</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Shintoraha32.png" /></td><td>Shintoraha</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Yeocheok33.png" /></td><td>Yeocheok</td></tr><tr><td style="text-align: center;"><img src="legend/PoliticalAreaMap_3_Shuria34.png" /></td><td>Shuria</td></tr></table>': layer_PoliticalAreaMap_3,'<img src="legend/waterbody_codes_2.png" /> waterbody_codes': layer_waterbody_codes_2,'<img src="legend/ContinentalCoastline1k_1.png" /> Continental Coastline 1k': layer_ContinentalCoastline1k_1,'<img src="legend/ContinentalCoastline500m_0.png" /> Continental Coastline 500m': layer_ContinentalCoastline500m_0,}).addTo(map);L.control.scale({position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}).addTo(map);
         map.on("zoomend", function(){
 
-                if (map.hasLayer(layer_PoliticalAreaMap_4)) {
+                if (map.hasLayer(layer_PoliticalAreaMap_3)) {
                     if (map.getZoom() <= 7 && map.getZoom() >= 10) {
-                        layer_PoliticalAreaMap_4.eachLayer(function (layer) {
+                        layer_PoliticalAreaMap_3.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_PoliticalAreaMap_4.eachLayer(function (layer) {
+                        layer_PoliticalAreaMap_3.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
                 }
-                if (map.hasLayer(layer_States_5)) {
+                if (map.hasLayer(layer_States_4)) {
                     if (map.getZoom() <= 4 && map.getZoom() >= 19) {
-                        layer_States_5.eachLayer(function (layer) {
+                        layer_States_4.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_States_5.eachLayer(function (layer) {
+                        layer_States_4.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
@@ -871,49 +840,49 @@
               i++;
         });
         var i = 0;
-        layer_States_5.eachLayer(function(layer) {
+        layer_States_4.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['state'] !== null?String('<div style="color: #000000; font-size: 10pt; font-family: \'MV Boli\', sans-serif;">' + layer.feature.properties['state']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_States_5'});
+            layer.bindTooltip((layer.feature.properties['state'] !== null?String('<div style="color: #000000; font-size: 10pt; font-family: \'MV Boli\', sans-serif;">' + layer.feature.properties['state']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_States_4'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-                if (map.hasLayer(layer_PoliticalAreaMap_4)) {
+                if (map.hasLayer(layer_PoliticalAreaMap_3)) {
                     if (map.getZoom() <= 7 && map.getZoom() >= 10) {
-                        layer_PoliticalAreaMap_4.eachLayer(function (layer) {
+                        layer_PoliticalAreaMap_3.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_PoliticalAreaMap_4.eachLayer(function (layer) {
+                        layer_PoliticalAreaMap_3.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
                 }
-                if (map.hasLayer(layer_States_5)) {
+                if (map.hasLayer(layer_States_4)) {
                     if (map.getZoom() <= 4 && map.getZoom() >= 19) {
-                        layer_States_5.eachLayer(function (layer) {
+                        layer_States_4.eachLayer(function (layer) {
                             layer.openTooltip();
                         });
                     } else {
-                        layer_States_5.eachLayer(function (layer) {
+                        layer_States_4.eachLayer(function (layer) {
                             layer.closeTooltip();
                         });
                     }
                 }
-        resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_4,layer_States_5]);
+        resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_3,layer_States_4]);
         map.on("zoomend", function(){
-            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_4,layer_States_5]);
+            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_3,layer_States_4]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_4,layer_States_5]);
+            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_3,layer_States_4]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_4,layer_States_5]);
+            resetLabels([layer_waterbody_codes_2,layer_PoliticalAreaMap_3,layer_States_4]);
         });
         </script>
     </body>
