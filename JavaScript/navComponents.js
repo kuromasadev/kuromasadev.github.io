@@ -20,16 +20,16 @@ navTemplate.innerHTML = `
 
 <div id="menu" class="flex-container" >
     <div>
-        <img class="Icon" src="/Materials/Icon/Home.png" alt="Home" onclick="this.src='/Materials/Icon/Home-invert.png'; location.href='/index.html';">
+        <img class="Icon" src="./Materials/Icon/Home.png" alt="Home" onclick="this.src='/Materials/Icon/Home-invert.png'; location.href='./index.html';">
     </div>
     <div id="infoIcon">
-        <img class="Icon" src="/Materials/Icon/Info.png" alt="Info" onclick="showHideChecker(getElementById('hoverInfoDiv'), this, '/Materials/Icon/Info-invert.png', '/Materials/Icon/Info.png');">
+        <img class="Icon" src="./Materials/Icon/Info.png" alt="Info" onclick="showHideChecker(getElementById('hoverInfoDiv'), this, '/Materials/Icon/Info-invert.png', '/Materials/Icon/Info.png');">
     </div>
     <div>
-        <img class="Icon" src="/Materials/Icon/github-rev.png" alt="Github" onclick="parent.open('https://github.com/QihangFan/QihangFan.github.io')">
+        <img class="Icon" src="./Materials/Icon/github-rev.png" alt="Github" onclick="parent.open('https://github.com/kuromasadev')">
     </div id="menuIcon">
     <div>
-        <img class="Icon" src="/Materials/Icon/Menu.png" alt="Menu" onclick="showHideCheckerDropDown(getElementById('menuDropdown'), this, '/Materials/Icon/Menu-revert.png', '/Materials/Icon/Menu.png');">
+        <img class="Icon" src="./Materials/Icon/Menu.png" alt="Menu" onclick="showHideCheckerDropDown(getElementById('menuDropdown'), this, '/Materials/Icon/Menu-revert.png', '/Materials/Icon/Menu.png');">
     </div>
 </div>
 `
