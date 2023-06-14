@@ -1,0 +1,509 @@
+@import url("https://use.typekit.net/xlm0fuz.css");
+
+body {
+  background: lavender;
+  font-family: 'Roboto Mono', monospace;
+  width: 100vw;
+  height: 100vh;
+}
+
+.site {
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: -8px;
+}
+
+.overflowHidden {
+  overflow: hidden;
+}
+
+.overflowXHidden {
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: garamond-premier-pro-display, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 48px;
+  color: #425080;
+  margin-bottom: 15px;
+}
+
+.h1-navDir {
+  color: #B0C2FF;
+  font-weight: 600;
+  font-size: 64px;
+  transform: translate(10%, -40%);
+}
+
+.h1-navDir-iso {
+  font-size: 30px;
+}
+
+.h1Talking {
+  color: rgba(237, 243, 255);
+}
+
+h2 {
+  font-family: garamond-premier-pro-display, serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  color: #425080;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.h2-Dec {
+  font-family: garamond-premier-pro-display, serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  color: rgba(66, 80, 128, 0.5);
+  margin-bottom: 20px;
+  margin-top: -25px;
+  line-height: 20px;
+}
+
+h3 {
+  font-family: open-sans, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: #425080;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+p {
+  font-family: open-sans, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  color: #425080;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.paraTalking {
+  color: rgba(237, 243, 255);
+  font-weight:500;
+  font-size: 18px;
+  /*position: fixed;*/
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.paraBold {
+  font-weight: 600;
+}
+
+/*fade in and fade out animation*/
+.visible {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: opacity 0.5s linear;
+}
+
+.hidden {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+/*homepage*/
+.isoProjectText {
+  position: fixed;
+  max-width:400px;
+  padding: 10px;
+  top: 7vh;
+  right: 5vw;
+}
+
+.textContent {
+  position:fixed;
+  z-index:3;
+}
+
+.centerContent {
+  text-align:center;
+  padding: 38vh 0;
+  width:100vw;
+  height:100vh;
+  top:0;
+  left:0;
+}
+
+#home-videoContainer {
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-gap: 0;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+/*#menuIndex {*/
+/*  display: flex;*/
+/*  gap: 10px;*/
+/*  position: absolute;*/
+/*  top: 10px;*/
+/*  right: 10px;*/
+/*  z-index: 3;*/
+
+/*}*/
+
+/*.IconIndex {*/
+/*  width: 28px;*/
+/*  cursor: pointer;*/
+/*}*/
+
+.grid-item {
+  overflow: hidden;
+
+}
+
+.grid-video {
+  object-fit: cover;
+  justify-items: center;
+  align-items: center;
+  transition-duration: 500ms;
+}
+
+.grid-video:hover {
+  transform: scale(1.1);
+  transition-duration: 500ms;
+  /*cursor: pointer;*/
+}
+
+.isoPointerText {
+  position: absolute;
+  height: 480px; top:100px;
+  width: 480px; left:50%;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+  z-index: 7;
+
+  transition: all 0.2s ease-out;
+}
+
+/*children pages*/
+.fullScreenVideo {
+  width: 100vw;
+  height: 100vh;
+  /*margin: -8px;*/
+  overflow: hidden;
+  position: fixed;
+}
+
+.navHotSpot {
+  width: 50px;
+  height: auto;
+  /*cursor: pointer;*/
+  z-index: 5;
+}
+
+.overlayLayerIso {
+  width:50px;
+  height:50px;
+  position: fixed;
+  left:50%;
+  top:50%;
+}
+
+.pageSolo {
+  object-fit: cover;
+  justify-items: center;
+  align-items: center;
+}
+
+.rotateButton_div {
+  position: fixed;
+  bottom: 5vh;
+  width: 100%;
+  text-align: center;
+}
+
+.rotateButton {
+  position: relative;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/*nav icons*/
+.navIcons {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left:0;
+  z-index:5;
+}
+
+.navButtonDiv {
+  position: absolute;
+  z-index: 6;
+}
+
+.centerButton {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.iconWrapper {
+  padding:40px;
+}
+
+.navButton {
+  width: 80px;
+  height: 80px;
+  /*cursor: pointer;*/
+  z-index: 5;
+}
+
+/*cursor change*/
+
+/*html {*/
+/*  cursor: none;*/
+/*  overflow: hidden;*/
+/*}*/
+
+.pointer {
+  height: 480px; top:100px;
+  width: 480px; left:50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 7;
+  position: fixed;
+
+  transition: all 0.2s ease-out;
+}
+
+.pointerText {
+  height: 480px; top:100px;
+  width: 480px; left:50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  z-index: 7;
+  position: fixed;
+
+  transition: all 0.4s ease-out;
+}
+
+.posAbsolute {
+  position: absolute;
+}
+
+.posFixed {
+  position: fixed;
+}
+
+.cursorStyle {
+  width: 140px;
+  transform: translate(-50%, -50%);
+}
+
+.isoPoint {
+  width: 70px;
+}
+
+.cursorNone {
+  cursor: none;
+}
+
+.cursorReturn {
+  animation: delay-pointer-events 0.5s;
+  cursor: default;
+  /*transition: cursor 0s 0.5s;*/
+  /*transition-delay: 0.3s;*/
+}
+
+@keyframes delay-pointer-events {
+  0% {
+    cursor: none;
+  }
+  50% {
+    cursor: none;
+  }
+  100% {
+    cursor: default;
+  }
+}
+
+/*hover info layer*/
+.hoverInfoPos{
+  position:absolute;
+  top:0;
+  right:0;
+  margin: 50px;
+  max-width:350px;
+  z-index:9;
+
+  overflow: auto;
+}
+
+.safePadding {
+  padding-top: 5vh;
+}
+
+.hoverInfoWrapper {
+  padding: 20px 40px 25px 40px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  background-color: rgba(237, 243, 255);
+}
+
+.p-HoverInfo {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.visible-slide {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: opacity 0.2s linear;
+}
+
+.hidden-slide {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: visibility 0s 0.2s, opacity 0.2s linear;
+}
+
+
+/*overlay position*/
+.topLeftCorner {
+  position: fixed;
+  top: 20vh;
+  left: calc(15vw - 50px);
+  max-width: 500px;
+}
+
+.topRightCorner {
+  position: fixed;
+  top: 20vh;
+  right: calc(15vw - 50px);
+  max-width: 500px;
+}
+
+.bottomRightCorner {
+  position: fixed;
+  bottom: 25vh;
+  right: calc(15vw - 50px);
+  max-width: 500px;
+}
+
+.bottomLeftCorner {
+  position: fixed;
+  bottom: 25vh;
+  left: calc(15vw - 50px);
+  max-width: 500px;
+}
+
+.accentColor {
+  color: #425080;
+}
+
+/*fade in and fade out animation for elevation icons*/
+.visibleElevation {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: opacity 0.3s linear;
+}
+
+.hiddenElevation {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+.elevIconPos {
+  left:3%;
+  top:38vh;
+}
+
+
+@media (max-width: 450px) {
+  .navButton {
+    width: 54px;
+    height: 54px;
+  }
+
+  .h1-navDir {
+    font-size: 48px;
+  }
+
+  .cursorStyle {
+    width: 100px;
+  }
+
+  .isoPoint {
+    width: 70px;
+  }
+
+  .hoverInfoPos {
+    min-height: 77vh;
+    padding-bottom: 17vh;
+  }
+
+  .topLeftCorner {
+    max-width: 400px;
+  }
+
+  .topRightCorner {
+    max-width: 400px;
+  }
+
+  .bottomRightCorner {
+    max-width: 400px;
+  }
+
+  .bottomLeftCorner {
+    max-width: 400px;
+  }
+
+  .paraTalking {
+    font-size: 2vh;
+    font-weight: 500;
+  }
+
+  .pointer {
+    position: absolute;
+  }
+
+  .pointerText {
+    position: absolute;
+  }
+
+  .centerContent {
+    padding-top: 32vh;
+  }
+
+  .h1-navDir-iso {
+    font-size: 30px;
+  }
+
+  .elevIconPos {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    top:50vh
+  }
+
+  .isoProjectText {
+    padding: 10px 10px 10px 60px;
+  }
+
+  .isoPara {
+    font-weight: 500;
+  }
+}

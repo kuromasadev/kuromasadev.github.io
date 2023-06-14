@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-3BFP82C12P');
+    </script>
+
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="../../JavaScript/navComponents.js"></script>
+    <script src="../../JavaScript/isoOverlayController.js"></script>
+    <script src="../../JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="../../JavaScript/dropdownMenu.js"></script>
+    <script src="../../JavaScript/overlayInfoCoreConceptI.js"></script>
+    <script src="../../JavaScript/overlayInfoCredit.js"></script>
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+
+    <title>Marfet</title>
+
+</head>
+
+<body>
+
+<!-- site container to control overflow-->
+<div id="siteDiv" class="site">
+
+    <!--  background-->
+    <div id="Marfetsolo_div" class="fullScreenVideo" >
+        <video id="MarfetSolo" class="pageSolo" width=100% height=100% autoplay muted playsinline>
+            <source src="/Materials/Video/Marfet_isoFull.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="overlayLayer">
+
+        <!--        rotate button-->
+        <div id="rotateButton_div_marfet" class="rotateButton_div" style="visibility: hidden; opacity: 0;" >
+            <div>
+                <img class="rotateButton" src="/Materials/Icon/RotateButton.png" alt="Rotate" onclick="MarfetSolo.pause(); currentStopTime = pausePoint[pauseIndex]; MarfetSolo.play();">
+            </div>
+        </div>
+
+        <!--        text content-->
+        <div id="marfetTextContent" class="isoProjectText" style = "width:320px; visibility: hidden; opacity: 0;">
+            <div class="h1Wrapper" style = "width:100%; text-align: right;">
+                <h1>
+                    The Marfet
+                </h1>
+            </div>
+
+            <div class="paragraphWrapper" style = "width:100%; text-align: right;">
+                <p class="isoPara">
+                    Picking deadstock laid out on the field and have casual conversations.
+                </p>
+                <p class="isoPara">
+                    (open environment; lively)
+                </p>
+            </div>
+        </div>
+
+        <!--        hotspot-->
+        <div id="marfetHotspotFirst" class="overlayLayerIso" style="visibility: hidden; opacity: 0;" >
+            <!--   hover receiver-->
+            <div onclick="location.href='/Pages/Marfet/MarfetArch.html';">
+                <div id="navArch1" class="navButtonDiv" style = "left:calc(-5vw - 130px); top:calc(-4vh - 20px)">
+                    <div>
+                        <img id="MarfetArch" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='/Pages/Marfet/MarfetBooth.html';">
+                <div id="navBooth1" class="navButtonDiv" style = "left:calc(-5vw - 80px); bottom:calc(-4vh - 40px)">
+                    <div>
+                        <img id="MarfetBooth" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='/Pages/Marfet/MarfetUnderground.html';">
+                <div id="navUnderg1" class="navButtonDiv" style = "right:calc(-20vw + 20px); bottom:calc(-5vh - 80px)">
+                    <div>
+                        <img id="MarfetUnderground" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--        hotspot second-->
+        <div id="marfetHotspotSecond" class="overlayLayerIso" style="visibility: hidden; opacity: 0;">
+
+            <div onclick="location.href='/Pages/Marfet/MarfetArch.html';">
+                <div id="navArch2" class="navButtonDiv" style = "right:calc(-5vw - 90px); top:calc(-4vh - 50px)">
+                    <div>
+                        <img id="MarfetArchSecond" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='/Pages/Marfet/MarfetBooth.html';">
+                <div id="navBooth2" class="navButtonDiv" style = "right:calc(-5vw - 20px); top:calc(-4vh - 160px)">
+                    <div>
+                        <img id="MarfetBoothSecond" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+            <div onclick="location.href='/Pages/Marfet/MarfetUnderground.html';">
+                <div id="navUnderg2" class="navButtonDiv" style = "left:calc(-26vw - 60px); bottom:calc(-5vh - 20px)">
+                    <div>
+                        <img id="MarfetUndergroundSecond" class="navHotSpot" src="/Materials/Icon/HotSpot.png"
+                             alt="Enter">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--hover content to show-->
+    <div id="cursorArrow" class="pointer" style="visibility: hidden; opacity: 0;">
+        <img src="/Materials/Icon/zoom-in.png" class="cursorStyle  isoPoint" alt="">
+    </div>
+
+    <div id="cursorTextBooth" class="pointerText" style="visibility: hidden; opacity: 0;">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Booth
+        </h1>
+    </div>
+
+    <div id="cursorTextUnderground" class="pointerText" style="visibility: hidden; opacity: 0; transform: translate(-270px, 0);">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Underground
+        </h1>
+    </div>
+
+    <div id="cursorTextArch" class="pointerText" style="visibility: hidden; opacity: 0;">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Arch
+        </h1>
+    </div>
+
+    <div id="cursorTextBoothSecond" class="pointerText" style="visibility: hidden; opacity: 0; transform: translate(-200px, 0);">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Booth
+        </h1>
+    </div>
+
+    <div id="cursorTextUndergroundSecond" class="pointerText" style="visibility: hidden; opacity: 0;">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Underground
+        </h1>
+    </div>
+
+    <div id="cursorTextArchSecond" class="pointerText" style="visibility: hidden; opacity: 0; transform: translate(-190px, 0);">
+        <h1 class="h1-navDir h1-navDir-iso">
+            The Arch
+        </h1>
+    </div>
+
+    <!--  nav menu-->
+    <nav-menu></nav-menu>
+
+    <dropdown-menu id="menuDropdown" style="visibility: hidden; opacity: 0;"></dropdown-menu>
+
+    <div id="hoverInfoDiv" class="hoverInfoPos" style="visibility: hidden; opacity: 0;">
+
+        <div class="hoverInfoWrapper">
+            <h2>
+                The Marfet
+            </h2>
+            <h2 class="h2-Dec">
+                Four Typos
+            </h2>
+            <p class="p-HoverInfo">
+                Picking deadstock laid out on the field and have casual conversations.
+            </p>
+            <p class="p-HoverInfo">
+                (open environment; lively)
+            </p>
+        </div>
+
+        <div class="hoverInfoWrapper">
+            <h2>
+                Narrative
+            </h2>
+            <h2 class="h2-Dec">
+                Chapter II: Expand the Upcycling Business
+            </h2>
+            <p class="p-HoverInfo">
+                After the 4 typologies are identified, we begin to transform them into project-specific spaces.
+            </p>
+            <p class="p-HoverInfo">
+                Like how upcycling is done, we dismantle the box of walls, rotate, displace and scale. The camera is set up to look at both the micro-level activities and macro-level spatial organizations. Taking architectural elements as spatial furniture (trusses, arches, window frames, stairs, columns…), we mix-match to create an illusion of familiarity.
+            </p>
+        </div>
+
+        <div class="hoverInfoWrapper">
+            <core-concept-i></core-concept-i>
+        </div>
+
+        <div class="hoverInfoWrapper">
+            <h2>
+                Credit
+            </h2>
+            <h2 class="h2-Dec">
+                Amazing End-to-end Experience
+            </h2>
+            <p class="p-HoverInfo">
+                Project Designer: Qihang Fan, Kangxin Wu<br>
+                Project Instructor: Peter Testa<br>
+                Web Developer: Qihang Fan<br>
+                Web Development Instructor: Anthony Tran
+            </p>
+            <p class="p-HoverInfo">
+                Copyright © 2020 Qihang Fan. All Rights Reserved
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+    //overflow controller
+    overflowController();
+
+    //animation controller
+    const MarfetSolo = document.getElementById("MarfetSolo");
+
+    var pausePoint = [5,11,13],
+        pauseIndex = 0,
+        currentStopTime = pausePoint[pauseIndex];
+
+    var videoTracker = setInterval(() => {
+
+        if (MarfetSolo.currentTime >= currentStopTime) {
+            MarfetSolo.pause();
+        }
+
+        // console.log(MarfetSolo.currentTime);
+        // console.log(currentStopTime);
+
+    }, 10)
+
+    //loop video
+    MarfetSolo.addEventListener('ended', (event) => {
+        pauseIndex = 0;
+        currentStopTime = pausePoint[pauseIndex];
+        // console.log("videoReset");
+        MarfetSolo.play();
+    });
+
+    MarfetSolo.addEventListener('pause', (event) => {
+        MarfetSolo.currentTime = pausePoint[pauseIndex];
+        ++pauseIndex;
+        currentStopTime = pausePoint[pauseIndex];
+    });
+
+    // function checkTime() {
+    //     if (MarfetSolo.currentTime >= currentStopTime) {
+    //         MarfetSolo.pause();
+    //         if (pausePoint.length > ++pauseIndex) {
+    //             currentStopTime = pausePoint[pauseIndex];
+    //         }
+    //     }
+    // }
+
+    // function videoPlay(){
+    //     MarfetSolo.play();
+    // }
+
+    // function videoReset(){
+    //     pauseIndex = 0;
+    //     currentStopTime = pausePoint[pauseIndex];
+    // }
+
+    //info-overlay controller
+    isoOverlayControl(MarfetSolo, "rotateButton_div_marfet", "marfetTextContent", "marfetHotspotFirst", "marfetHotspotSecond");
+
+    //hover - cursor change
+    const cursorArrow = document.getElementById("cursorArrow"),
+            cursorTextBooth = document.getElementById("cursorTextBooth"),
+            cursorTextUnderground = document.getElementById("cursorTextUnderground"),
+            cursorTextArch = document.getElementById("cursorTextArch"),
+            cursorTextBoothSecond = document.getElementById("cursorTextBoothSecond"),
+            cursorTextUndergroundSecond = document.getElementById("cursorTextUndergroundSecond"),
+            cursorTextArchSecond = document.getElementById("cursorTextArchSecond");
+
+    $(document).mousemove(function (e) {
+        $(".pointer").css({ left: e.pageX, top: e.pageY });
+        $(".pointerText").css({ left: e.pageX, top: e.pageY });
+    });
+
+
+    $("#navArch1").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextArch);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextArch);
+            showUp(this);
+            cursorShowUp();
+        });
+
+    $("#navArch2").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextArchSecond);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextArchSecond);
+            showUp(this);
+            cursorShowUp();
+        });
+
+    $("#navBooth1").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextBooth);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextBooth);
+            showUp(this);
+            cursorShowUp();
+        });
+
+    $("#navBooth2").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextBoothSecond);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextBoothSecond);
+            showUp(this);
+            cursorShowUp();
+        });
+
+    $("#navUnderg1").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextUnderground);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextUnderground);
+            showUp(this);
+            cursorShowUp();
+        });
+
+    $("#navUnderg2").hover(function(){
+
+            showUp(cursorArrow);
+            showUp(cursorTextUndergroundSecond);
+            shyAway(this);
+            cursorShyAway();
+        },
+
+        function(){
+
+            shyAway(cursorArrow);
+            shyAway(cursorTextUndergroundSecond);
+            showUp(this);
+            cursorShowUp();
+        });
+
+</script>
