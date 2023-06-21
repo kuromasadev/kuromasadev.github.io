@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3BFP82C12P');
+    </script>
+
+    <!--    site meta data-->
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+    <meta name="description" content="Kuromasa: designing spaces, places and mapping everything in between.">
+    <meta name="keywords" content="HTML,CSS,JavaScript,Architecture,Planning,GIS,design">
+
+    <!--    social media meta data-->
+    <meta property="og:title" content="Alberto Ponce // urban planner & analyst, world builder" />
+    <meta property="og:type" content="product" />
+    <meta property="og:image:url" content="https://kuromasadev.github.io/Materials/Image/SocialMediaImage.png" />
+    <meta property="og:image:secure_url" content="https://kuromasadev.github.io/Materials/Image/SocialMediaImage.png" />
+    <meta property="og:url" content="https://kuromasadev.github.io" />
+    <meta property="og:description" content="designing spaces, places and mapping everything in between." />
+    <meta property="og:site_name" content="Alberto Ponce //" />
+    <meta name="author" content="Alberto Ponce" />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JavaScript/home_navComponents.js"></script>
+    <script src="JavaScript/isoOverlayController.js"></script>
+    <script src="JavaScript/jquery-3.6.0.min.js"></script>
+    <script src="JavaScript/dropdownMenu.js"></script>
+
+
+    <title>Alberto Ponce</title>
+
+    <style>
+      #hoverInfoDiv {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: white;
+          border-radius: 10px;
+          padding: 20px;
+          visibility: visible;
+          opacity: 1;
+          text-align: center;
+      }
+
+      .hoverInfoWrapper {
+          margin-bottom: 20px;
+      }
+
+      .h2-Dec, .p-HoverInfo {
+          text-align:justify ;
+      }
+
+      nav-menu {
+          position: absolute;
+          top: calc(50% + 250px); /* aAdjust this value as needed */
+          left: 70%;
+          transform: translate(-50%, -50%);
+      }
+    </style>
+
+  </head>
+
+
+
+
+  <body>
+    <div id="siteDiv" class="site">
+      <div id="home-videoContainer" class="grid-container">
+        <div class="grid-item" onclick="location.href='Pages/01Planning/01Planning.html';">
+          <!--    planning-based solutions, more current work -->
+          <video id="01Planning" class="grid-video" width=100% height=100% loop muted playsinline>
+            <source src="Materials/Video/01Planning_isoFull.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="grid-item" onclick="location.href='Pages/02Architecture/02Architecture.html';">
+          <!--    architecture-based solutions -->
+          <video id="02Architecture" class="grid-video" width=100% height=100% loop muted playsinline>
+            <source src="Materials/Video/02Architecture_isoFull.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="grid-item" onclick="location.href='Pages/Stufio/Stufio.html';">
+          <!--    "research" hypotetical competition publications -->
+          <video id="Stufio" class="grid-video" width=100% height=100% loop muted playsinline>
+            <source src="Materials/Video/04Research_isoFull.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="grid-item" onclick="location.href='Pages/Tofer/Tofer.html';">
+          <!--    "design" urbanism stuff -->
+          <video id="Tofer" class="grid-video" width=100% height=100% loop muted playsinline>
+            <source src="Materials/Video/03Design_isoFull.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <!--hover content first to show-->
+
+      <div id="02ArchitectureArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-30%, -10%); transition: all 0s;">
+        <h1 class="h1-navDir" style="font-size: 80px;">
+          Architecture
+        </h1>
+      </div>
+
+      <div id="01PlanningArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-40%, -10%); transition: all 0s;">
+        <h1 class="h1-navDir" style="font-size: 80px;">
+          Planning
+        </h1>
+      </div>
+
+      <div id="studioArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-25%, -10%); transition: all 0s;">
+        <h1 class="h1-navDir" style="font-size: 80px;">
+          Data
+        </h1>
+      </div>
+
+      <div id="toferArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-30%, -10%); transition: all 0s;">
+        <h1 class="h1-navDir" style="font-size: 80px;">
+          Design
+        </h1>
+      </div>
+
+ 
+      <div id="hoverInfoDiv" class="hoverInfoPos" >
+        <div class="hoverInfoWrapper" style="text-align: center;">
+          <h2>
+            alberto rafael ponce
+          </h2>
+          <h2 class="h2-Dec" style="text-align: center;">
+           urban planner & analyst, community and world builder
+          </h2>
+      
+          <h3>
+            about me
+          </h3>
+      
+          <p class="p-HoverInfo">
+            multidisciplinary, driven planner and analyst 
+            with a passion for interpreting large data into stories. 
+            Adept at working independently and collaborating with teams 
+            across multiple roles and functions, particular expertise 
+            with large local government and public agencies. 
+          </p>
+      
+          <h3>
+            Current Practice: <br>
+            Planner at Harris County Engineering Department
+          </h3>
+         
+          <h3>
+            other practices
+          </h3>
+      
+          <p class="p-HoverInfo" style="text-align: center;">
+            data analysis and visualization <br>
+            GIS analysis and interactive mapping applications <br>
+            architectural design, master planning <br>
+            design research <br>
+                        
+          </p>
+        </div>
+      
+        <div class="hoverInfoWrapper">
+          <h2>
+            links<br>           
+          </h2>
+          <p class="p-HoverInfo">
+                <!--  nav menu-->
+                <home-nav-component></home-nav-component>
+          </p>
+        </div>
+      </div>
+      
+
+  </body>
+</html>
+
+<script type="text/javascript">
+
+  overflowController();
+
+      // Play videos on user interaction (click)
+      function playVideo(videoId) {
+      const video = document.getElementById(videoId);
+      video.play();
+    }
+
+    document.querySelectorAll('.grid-item').forEach((item, index) => {
+      item.addEventListener('click', () => {
+        const videoId = videoList[index].id;
+        playVideo(videoId);
+      });
+    });
+
+
+  // console.log("reading");
+
+  const Tofer = document.getElementById("Tofer");
+  const Architecture = document.getElementById("02Architecture");
+  const Planning = document.getElementById("01Planning");
+  const Stufio = document.getElementById("Stufio");
+  let videoList = [Tofer, Architecture, Planning, Stufio];
+
+  // console.log(videoList);
+
+  let vidReady = [false, false, false, false];
+
+  // console.log(vidReady);
+  // Mobile
+  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    videoList.forEach(function(elem){
+      elem.play();
+    });
+  } else {
+    for (let i = 0; i < videoList.length; i++){
+      videoList[i].addEventListener("canplaythrough", function(){
+        vidReady[i] = true;
+        console.log(vidReady);
+      });
+    }
+  }
+  
+  var simulVidPlayer = setInterval(() => {
+    var trueChecker = arr => arr.every(v => v === true);
+
+    if (trueChecker(vidReady) === true) {
+      videoList.forEach(function(elem){
+        elem.play();
+        console.log("Play");
+        clearInterval(simulVidPlayer);
+      });
+      // clearInterval(simulVidPlayer);
+    }
+  }, 100)
+
+
+  //hover cursor change
+
+  $(document).mousemove(function (e) {
+    // $(".pointer").css({ left: e.pageX, top: e.pageY });
+    $(".isoPointerText").css({ left: e.pageX, top: e.pageY });
+  });
+
+  $("#02Architecture").hover(function(){
+            showUp(document.getElementById("02ArchitectureArrowText"));
+            cursorShyAway();
+          },
+
+          function(){
+            shyAway(document.getElementById("02ArchitectureArrowText"));
+            cursorShowUp();
+          });
+
+  $("#01Planning").hover(function(){
+            showUp(document.getElementById("01PlanningArrowText"));
+            cursorShyAway();
+          },
+
+          function(){
+            shyAway(document.getElementById("01PlanningArrowText"));
+            cursorShowUp();
+          });
+
+  $("#Stufio").hover(function(){
+            showUp(document.getElementById("studioArrowText"));
+            cursorShyAway();
+          },
+
+          function(){
+            shyAway(document.getElementById("studioArrowText"));
+            cursorShowUp();
+          });
+
+  $("#Tofer").hover(function(){
+            showUp(document.getElementById("toferArrowText"));
+            cursorShyAway();
+          },
+
+          function(){
+            shyAway(document.getElementById("toferArrowText"));
+            cursorShowUp();
+          });
+</script>

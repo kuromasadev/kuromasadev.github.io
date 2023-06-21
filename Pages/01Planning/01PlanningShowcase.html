@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3BFP82C12P');
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.css"/>
+
+  <style>
+    #carouselContainer {
+      display:flex;
+      align-items:baseline;
+      justify-content: center;
+      width: 100%;
+      height: 100vh; /* Adjust as needed */
+    }
+    
+    .galleryImage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <script src="../../JavaScript/isoOverlayController.js"></script>
+  <script src="../../JavaScript/jquery-3.6.0.min.js"></script>
+  <script src="../../JavaScript/navComponents.js"></script>
+  <script src="../../JavaScript/dropdownMenu.js"></script>
+  <script src="../../JavaScript/overlayInfoCredit.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick.min.js"></script>
+
+  <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+
+  <title>Sustainable Infills</title>
+
+</head>
+<body>
+
+<div id="siteDiv" class="site">
+
+  <div id="carouselContainer">
+          
+    <div id="imageGalleryOverlay">
+        <div class="galleryImage">
+        <img src="../../Materials/Image/planning_00.jpg" alt="Image 1">
+        </div>
+        <div class="galleryImage">
+          <img src="../../Materials/Image/planning_01.jpg" alt="Image 2">
+        </div>
+        <div class="galleryImage">
+          <img src="../../Materials/Image/planning_02.jpg" alt="Image 3">
+        </div>
+        <div class="galleryImage">
+          <img src="../../Materials/Image/planning_03.jpg" alt="Image 4">
+        </div>
+        <div class="galleryImage">
+          <img src="../../Materials/Image/planning_04.jpg" alt="Image 5">
+        </div>
+        <div class="galleryImage">
+            <img src="../../Materials/Image/planning_05.jpg" alt="Image 6">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      $('#carouselContainer').slick({
+        dots: true, // Display navigation dots
+        arrows: true, // Display navigation arrows
+        infinite: true, // Enable infinite loop
+        autoplay: true, // Enable autoplay
+        autoplaySpeed: 3000, // Autoplay speed in milliseconds
+        speed: 500, // Transition speed in milliseconds
+        slidesToShow: 1, // Number of slides to show at a time
+        slidesToScroll: 1 // Number of slides to scroll at a time
+      });
+    });
+  </script>
+
+      <!--      text content-->
+  <div id="textContentWrapper" class="textContent" style="visibility: hidden; opacity: 0;">
+    <p class="paraTalking topRightCorner" style="padding-left: 140px; text-align: right;">
+          Connect. Extend. Bridge.
+    </p>
+  </div>
+</div>
+
+<!--  nav menu-->
+<nav-menu></nav-menu>
+
+<!--  dropdown menu-->
+<dropdown-menu id="menuDropdown" style="visibility: hidden; opacity: 0;"></dropdown-menu>
+
+<!--  dropdown info extra-->
+  <div id="hoverInfoDiv" class="hoverInfoPos" style="visibility: hidden; opacity: 0;">
+    <div class="hoverInfoWrapper">
+      <h2>
+        Sustainable Infills
+      </h2>
+      <h2 class="h2-Dec">
+        showcase project
+      </h2>
+      <h6 class="h4-Dec">
+        Land value drives development and investment. But in over-industrialized environments, it is up to the cities to secure infill areas from becoming overflow spaces. This project proposes a schema and infographic strategy to obtain public support. 
+      </h6>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+  //site overflow setup
+  overflowController();
+
+  //intro animation
+  const videoContent = document.getElementById("videoContent");
+
+  //video content timeline
+  videoContent.addEventListener('play', (event) => {
+    immersiveVideoControl("textContentWrapper", 1000,"navIconWrapper" , 2000);
+  });
+
+  $(document).mousemove(function (e) {
+    $(".pointer").css({ left: e.pageX, top: e.pageY });
+    $(".pointerText").css({ left: e.pageX, top: e.pageY });
+  });
+
+  cursorShowShy("#leftIcon", document.getElementById("leftArrow"), document.getElementById("leftArrowText"));
+  // cursorShowShy("#rightIcon", document.getElementById("rightArrow"), document.getElementById("rightArrowText"));
+  // cursorShowShy("#topIcon", document.getElementById("topArrow"), document.getElementById("topArrowText"));
+  cursorShowShy("#bottomIcon", document.getElementById("bottomArrow"), document.getElementById("bottomArrowText"));
+
+  $("#leftIcon").hover(function(){showUp(document.getElementById("leftStair"));}, function(){shyAway(document.getElementById("leftStair"));});
+  // $("#rightIcon").hover(function(){showUp(document.getElementById("rightStair"));}, function(){shyAway(document.getElementById("rightStair"));});
+  $("#bottomIcon").hover(function(){showUp(document.getElementById("bottomStair"));}, function(){shyAway(document.getElementById("bottomStair"));});
+</script>
+
+

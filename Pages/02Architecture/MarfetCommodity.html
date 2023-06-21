@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3BFP82C12P');
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <script src="../../JavaScript/navComponents.js"></script>
+  <script src="../../JavaScript/isoOverlayController.js"></script>
+  <script src="../../JavaScript/jquery-3.6.0.min.js"></script>
+  <script src="../../JavaScript/dropdownMenu.js"></script>
+  <script src="../../JavaScript/overlayInfoCredit.js"></script>
+  <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+
+  <title>Marfet Commodity</title>
+
+</head>
+<body>
+
+<div id="siteDiv" class="site">
+
+  <!--  background-->
+  <div id="Marfetsolo_div" class="fullScreenVideo">
+    <video id="MarfetCommoditySolo" class="pageSolo" width=100% height=100% autoplay muted playsinline loop>
+      <source src="/Materials/Video/Marfet/MarfetCommodity.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="overlayLayer">
+    <div id="marfetCommodityNavIcons" class="navIcons" style="visibility: hidden; opacity: 0;">
+
+      <!--    hover receiver-->
+      <div onclick="location.href='/Pages/Marfet/MarfetTopview.html';">
+        <div id="MarfetCommodityTopview" class="navButtonDiv" style = "right:15%; top:3%">
+          <div class="iconWrapper">
+            <img class="navButton" src="/Materials/Icon/top-view.png"
+                 alt="Enter">
+          </div>
+        </div>
+      </div>
+
+      <div onclick="location.href='/Pages/Marfet/MarfetBooth.html';">
+        <div id="MarfetCommodityReturn" class="navButtonDiv" style = "left:10%; bottom:10%">
+          <div class="iconWrapper">
+            <img class="navButton" src="/Materials/Icon/door-enter-line-left.png"
+                 alt="Enter">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--      text content-->
+    <div id="marfetCommodityText" class="textContent" style="visibility: hidden; opacity: 0;">
+        <p class="paraTalking bottomRightCorner" style="padding-left: 140px; text-align: right">
+          Shopping deadstock is the fashion itself.
+        </p>
+    </div>
+  </div>
+
+
+  <!--hover content first to show-->
+  <div id="cursorArchArrow" class="pointer" style="visibility: hidden; opacity: 0;">
+    <img src="/Materials/Icon/arrow-dif.png" class="cursorStyle" alt="" style="transform-origin: center; transform: rotate(270deg) translate(50%, -50%);">
+  </div>
+
+  <div id="cursorArchText" class="pointerText" style="visibility: hidden; opacity: 0; transform: translate(-5%, 5%);">
+    <h1 class="h1-navDir">
+      The Booth
+    </h1>
+  </div>
+
+  <div id="cursorBoothTopview" class="pointer" style="visibility: hidden; opacity: 0;">
+    <img src="/Materials/Icon/topview.png" class="cursorStyle" alt="" style="transform-origin: center; transform: translate(-50%, -50%);">
+  </div>
+
+  <div id="cursorBoothTopviewText" class="pointerText" style="visibility: hidden; opacity: 0; transform: translate(-35%, 10%);">
+    <h1 class="h1-navDir">
+      Topview
+    </h1>
+  </div>
+
+  <!--  nav menu-->
+  <nav-menu></nav-menu>
+
+  <!--  dropdown menu-->
+  <dropdown-menu id="menuDropdown" style="visibility: hidden; opacity: 0;"></dropdown-menu>
+
+  <!--  dropdown info extra-->
+  <div id="hoverInfoDiv" class="hoverInfoPos" style="visibility: hidden; opacity: 0;">
+    <div class="hoverInfoWrapper">
+      <h2>
+        The Commodity
+      </h2>
+      <h2 class="h2-Dec">
+        The Marfet
+      </h2>
+      <overlay-credit></overlay-credit>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+<script type="text/javascript">
+
+  //site overflow setup
+  overflowController();
+
+  //intro animation
+  const marfetComoditySolo = document.getElementById("MarfetCommoditySolo");
+
+  marfetComoditySolo.addEventListener('play', (event) => {
+    immersiveVideoControl("marfetCommodityText", 2000, "marfetCommodityNavIcons", 4000);
+  });
+
+  $(document).mousemove(function (e) {
+    $(".pointer").css({ left: e.pageX, top: e.pageY });
+    $(".pointerText").css({ left: e.pageX, top: e.pageY });
+  });
+
+  cursorShowShy("#MarfetCommodityReturn", document.getElementById("cursorArchArrow"), document.getElementById("cursorArchText"));
+  cursorShowShy("#MarfetCommodityTopview", document.getElementById("cursorBoothTopview"), document.getElementById("cursorBoothTopviewText"));
+</script>
+
+
