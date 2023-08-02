@@ -22,7 +22,7 @@
     <script src="../../JavaScript/overlayInfoCredit.js"></script>
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 
-    <title>Marfet</title>
+    <title>Architecture</title>
 
 </head>
 
@@ -32,44 +32,20 @@
 <div id="siteDiv" class="site">
 
     <!--  background-->
-    <div id="Marfetsolo_div" class="fullScreenVideo" >
-        <video id="MarfetSolo" class="pageSolo" width=100% height=100% autoplay muted playsinline>
-            <source src="../../Materials/Video/Marfet_isoFull.mp4" type="video/mp4">
+    <div id="02ArchitectureSolo_div" class="fullScreenVideo" >
+        <div class="overlay_video"></div>
+        <video id="02ArchitectureSolo" class="pageSolo" width=100% height=100% autoplay muted playsinline>
+            <source src="../../Materials/Video/02Architecture_isoFull.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
 
     <div class="overlayLayer">
 
-        <!--        rotate button-->
-        <div id="rotateButton_div_marfet" class="rotateButton_div" style="visibility: hidden; opacity: 0;" >
-            <div>
-                <img class="rotateButton" src="/Materials/Icon/RotateButton.png" alt="Rotate" onclick="MarfetSolo.pause(); currentStopTime = pausePoint[pauseIndex]; MarfetSolo.play();">
-            </div>
-        </div>
-
-        <!--        text content-->
-        <div id="marfetTextContent" class="isoProjectText" style = "width:320px; visibility: hidden; opacity: 0;">
-            <div class="h1Wrapper" style = "width:100%; text-align: right;">
-                <h1>
-                    The Marfet
-                </h1>
-            </div>
-
-            <div class="paragraphWrapper" style = "width:100%; text-align: right;">
-                <p class="isoPara">
-                    Picking deadstock laid out on the field and have casual conversations.
-                </p>
-                <p class="isoPara">
-                    (open environment; lively)
-                </p>
-            </div>
-        </div>
-
         <!--        hotspot-->
-        <div id="marfetHotspotFirst" class="overlayLayerIso" style="visibility: hidden; opacity: 0;" >
+        <div id="marfetHotspotFirst" class="overlayLayerIso" style="visibility: visible; opacity: 1;" >
             <!--   hover receiver-->
-            <div onclick="location.href='/Pages/Marfet/MarfetArch.html';">
+            <div onclick="location.href='../../Pages/cards/University Food & Beverage.html';">
                 <div id="navArch1" class="navButtonDiv" style = "left:calc(-5vw - 130px); top:calc(-4vh - 20px)">
                     <div>
                         <img id="MarfetArch" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
@@ -78,7 +54,7 @@
                 </div>
             </div>
 
-            <div onclick="location.href='/Pages/Marfet/MarfetBooth.html';">
+            <div onclick="location.href='../../Pages/cards/Margaritaville.html';">
                 <div id="navBooth1" class="navButtonDiv" style = "left:calc(-5vw - 80px); bottom:calc(-4vh - 40px)">
                     <div>
                         <img id="MarfetBooth" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
@@ -87,7 +63,7 @@
                 </div>
             </div>
 
-            <div onclick="location.href='/Pages/Marfet/MarfetUnderground.html';">
+            <div onclick="location.href='../../Pages/cards/IHG Avid Hotels.html';">
                 <div id="navUnderg1" class="navButtonDiv" style = "right:calc(-20vw + 20px); bottom:calc(-5vh - 80px)">
                     <div>
                         <img id="MarfetUnderground" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
@@ -99,9 +75,9 @@
         </div>
 
         <!--        hotspot second-->
-        <div id="marfetHotspotSecond" class="overlayLayerIso" style="visibility: hidden; opacity: 0;">
+        <div id="marfetHotspotSecond" class="overlayLayerIso" style="visibility: visible; opacity: 1;">
 
-            <div onclick="location.href='../../Pages/Marfet/MarfetArch.html';">
+            <div onclick="location.href='../../Pages/cards/Cruise Net.html';">
                 <div id="navArch2" class="navButtonDiv" style = "right:calc(-5vw - 90px); top:calc(-4vh - 50px)">
                     <div>
                         <img id="MarfetArchSecond" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
@@ -110,7 +86,7 @@
                 </div>
             </div>
 
-            <div onclick="location.href='../../Pages/Marfet/MarfetBooth.html';">
+            <div onclick="location.href='../../Pages/cards/Co-working Tower.html';">
                 <div id="navBooth2" class="navButtonDiv" style = "right:calc(-5vw - 20px); top:calc(-4vh - 160px)">
                     <div>
                         <img id="MarfetBoothSecond" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
@@ -119,14 +95,14 @@
                 </div>
             </div>
 
-            <div onclick="location.href='../../Pages/Marfet/MarfetUnderground.html';">
+             <!--<div onclick="location.href='../../Pages/Marfet/MarfetUnderground.html';">
                 <div id="navUnderg2" class="navButtonDiv" style = "left:calc(-26vw - 60px); bottom:calc(-5vh - 20px)">
                     <div>
                         <img id="MarfetUndergroundSecond" class="navHotSpot" src="../../Materials/Icon/HotSpot.png"
                              alt="Enter">
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </div>
@@ -138,7 +114,7 @@
 
     <div id="cursorTextBooth" class="pointerText" style="visibility: hidden; opacity: 0;">
         <h1 class="h1-navDir h1-navDir-iso">
-            The Booth
+            The Booth bbb
         </h1>
     </div>
 
@@ -244,7 +220,7 @@
     overflowController();
 
     //animation controller
-    const MarfetSolo = document.getElementById("MarfetSolo");
+    const 02ArchitectureSolo = document.getElementById("02ArchitectureSolo");
 
     var pausePoint = [5,11,13],
         pauseIndex = 0,
@@ -252,32 +228,32 @@
 
     var videoTracker = setInterval(() => {
 
-        if (MarfetSolo.currentTime >= currentStopTime) {
-            MarfetSolo.pause();
+        if (02ArchitectureSolo.currentTime >= currentStopTime) {
+            02ArchitectureSolo.pause();
         }
 
-        // console.log(MarfetSolo.currentTime);
+        // console.log(02ArchitectureSolo.currentTime);
         // console.log(currentStopTime);
 
     }, 10)
 
     //loop video
-    MarfetSolo.addEventListener('ended', (event) => {
+    02ArchitectureSolo.addEventListener('ended', (event) => {
         pauseIndex = 0;
         currentStopTime = pausePoint[pauseIndex];
         // console.log("videoReset");
-        MarfetSolo.play();
+        02ArchitectureSolo.play();
     });
 
-    MarfetSolo.addEventListener('pause', (event) => {
-        MarfetSolo.currentTime = pausePoint[pauseIndex];
+    02ArchitectureSolo.addEventListener('pause', (event) => {
+        02ArchitectureSolo.currentTime = pausePoint[pauseIndex];
         ++pauseIndex;
         currentStopTime = pausePoint[pauseIndex];
     });
 
     // function checkTime() {
-    //     if (MarfetSolo.currentTime >= currentStopTime) {
-    //         MarfetSolo.pause();
+    //     if (02ArchitectureSolo.currentTime >= currentStopTime) {
+    //         02ArchitectureSolo.pause();
     //         if (pausePoint.length > ++pauseIndex) {
     //             currentStopTime = pausePoint[pauseIndex];
     //         }
@@ -285,7 +261,7 @@
     // }
 
     // function videoPlay(){
-    //     MarfetSolo.play();
+    //     02ArchitectureSolo.play();
     // }
 
     // function videoReset(){
@@ -294,7 +270,7 @@
     // }
 
     //info-overlay controller
-    isoOverlayControl(MarfetSolo, "rotateButton_div_marfet", "marfetTextContent", "marfetHotspotFirst", "marfetHotspotSecond");
+    isoOverlayControl(02ArchitectureSolo, "rotateButton_div_marfet", "marfetTextContent", "marfetHotspotFirst", "marfetHotspotSecond");
 
     //hover - cursor change
     const cursorArrow = document.getElementById("cursorArrow"),

@@ -338,32 +338,49 @@ p {
 }
 
 /*hover info layer*/
-.hoverInfoPos{
-  position:absolute;
-  top:0;
-  right:0;
-  margin: 50px;
-  max-width:350px;
-  z-index:9;
 
-  overflow: auto;
-}
-
-.safePadding {
-  padding-top: 5vh;
-}
-
+/* Apply styles to the wrapper first */
 .hoverInfoWrapper {
-  padding: 20px 40px 25px 40px;
-  margin-bottom: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  background-color: #b0c2fff5;
   border-radius: 25px;
-  background-color: rgba(237, 243, 255);
+  padding: 20px;
+  max-width: 350px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+/* Now apply styles to the content container */
+#hoverInfoDiv {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Add media query to adjust for smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 768px) {
+  .hoverInfoWrapper {
+    margin: 20px; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Other existing styles remain the same */
+.h2-Dec, .p-HoverInfo {
+  text-align: justify;
 }
 
 .p-HoverInfo {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
+}
+
+.safePadding {
+  padding-top: 5vh;
 }
 
 .visible-slide {
@@ -377,6 +394,7 @@ p {
   opacity: 0 !important;
   transition: visibility 0s 0.2s, opacity 0.2s linear;
 }
+
 
 
 /*overlay position*/
@@ -506,4 +524,15 @@ p {
   .isoPara {
     font-weight: 500;
   }
+}
+
+
+.overlay_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.85;
 }

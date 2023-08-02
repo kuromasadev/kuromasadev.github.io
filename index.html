@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="icon" sizes="96x96" href="./Materials/Icon/Home.png">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
     <script>
@@ -37,36 +38,6 @@
 
     <title>Alberto Ponce</title>
 
-    <style>
-      #hoverInfoDiv {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          background-color: white;
-          border-radius: 10px;
-          padding: 20px;
-          visibility: visible;
-          opacity: 1;
-          text-align: center;
-      }
-
-      .hoverInfoWrapper {
-          margin-bottom: 20px;
-      }
-
-      .h2-Dec, .p-HoverInfo {
-          text-align:justify ;
-      }
-
-      nav-menu {
-          position: absolute;
-          top: calc(50% + 250px); /* aAdjust this value as needed */
-          left: 70%;
-          transform: translate(-50%, -50%);
-      }
-    </style>
-
   </head>
 
 
@@ -89,16 +60,16 @@
           </video>
         </div>
 
-        <div class="grid-item" onclick="location.href='Pages/Stufio/Stufio.html';">
-          <!--    "research" hypotetical competition publications -->
-          <video id="Stufio" class="grid-video" width=100% height=100% loop muted playsinline>
+        <div class="grid-item" onclick="location.href='Pages/03Data/03Data.html';">
+          <!--    data stuff -->
+          <video id="03Data" class="grid-video" width=100% height=100% loop muted playsinline>
             <source src="Materials/Video/04Research_isoFull.mp4" type="video/mp4">
           </video>
         </div>
 
-        <div class="grid-item" onclick="location.href='Pages/Tofer/Tofer.html';">
-          <!--    "design" urbanism stuff -->
-          <video id="Tofer" class="grid-video" width=100% height=100% loop muted playsinline>
+        <div class="grid-item" onclick="location.href='Pages/04Design/04Design.html';">
+          <!--    "design" stuff -->
+          <video id="04Design" class="grid-video" width=100% height=100% loop muted playsinline>
             <source src="Materials/Video/03Design_isoFull.mp4" type="video/mp4">
           </video>
         </div>
@@ -118,13 +89,13 @@
         </h1>
       </div>
 
-      <div id="studioArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-25%, -10%); transition: all 0s;">
+      <div id="03DataArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-25%, -10%); transition: all 0s;">
         <h1 class="h1-navDir" style="font-size: 80px;">
           Data
         </h1>
       </div>
 
-      <div id="toferArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-30%, -10%); transition: all 0s;">
+      <div id="04DesignArrowText" class="isoPointerText" style="visibility: hidden; opacity: 0; transform: translate(-30%, -10%); transition: all 0s;">
         <h1 class="h1-navDir" style="font-size: 80px;">
           Design
         </h1>
@@ -132,53 +103,12 @@
 
  
       <div id="hoverInfoDiv" class="hoverInfoPos" >
-        <div class="hoverInfoWrapper" style="text-align: center;">
+        <div class="hoverInfoWrapper">
           <h2>
             alberto rafael ponce
           </h2>
-          <h2 class="h2-Dec" style="text-align: center;">
-           urban planner & analyst, community and world builder
-          </h2>
-      
-          <h3>
-            about me
-          </h3>
-      
-          <p class="p-HoverInfo">
-            multidisciplinary, driven planner and analyst 
-            with a passion for interpreting large data into stories. 
-            Adept at working independently and collaborating with teams 
-            across multiple roles and functions, particular expertise 
-            with large local government and public agencies. 
-          </p>
-      
-          <h3>
-            Current Practice: <br>
-            Planner at Harris County Engineering Department
-          </h3>
-         
-          <h3>
-            other practices
-          </h3>
-      
-          <p class="p-HoverInfo" style="text-align: center;">
-            data analysis and visualization <br>
-            GIS analysis and interactive mapping applications <br>
-            architectural design, master planning <br>
-            design research <br>
-                        
-          </p>
-        </div>
-      
-        <div class="hoverInfoWrapper">
-          <h2>
-            links<br>           
-          </h2>
-          <p class="p-HoverInfo">
-                <!--  nav menu-->
-                <home-nav-component></home-nav-component>
-          </p>
-        </div>
+          <a href="Pages/Hello World.html" style="text-align:center;"><h3>urban planner & analyst, community and world builder</h3></a>
+  
       </div>
       
 
@@ -205,11 +135,11 @@
 
   // console.log("reading");
 
-  const Tofer = document.getElementById("Tofer");
+  const Design = document.getElementById("04Design");
   const Architecture = document.getElementById("02Architecture");
   const Planning = document.getElementById("01Planning");
-  const Stufio = document.getElementById("Stufio");
-  let videoList = [Tofer, Architecture, Planning, Stufio];
+  const Data = document.getElementById("03Data");
+  let videoList = [Design, Architecture, Planning, Data];
 
   // console.log(videoList);
 
@@ -271,23 +201,23 @@
             cursorShowUp();
           });
 
-  $("#Stufio").hover(function(){
-            showUp(document.getElementById("studioArrowText"));
+  $("#03Data").hover(function(){
+            showUp(document.getElementById("03DataArrowText"));
             cursorShyAway();
           },
 
           function(){
-            shyAway(document.getElementById("studioArrowText"));
+            shyAway(document.getElementById("03DataArrowText"));
             cursorShowUp();
           });
 
-  $("#Tofer").hover(function(){
-            showUp(document.getElementById("toferArrowText"));
+  $("#04Design").hover(function(){
+            showUp(document.getElementById("04DesignArrowText"));
             cursorShyAway();
           },
 
           function(){
-            shyAway(document.getElementById("toferArrowText"));
+            shyAway(document.getElementById("04DesignArrowText"));
             cursorShowUp();
           });
 </script>
