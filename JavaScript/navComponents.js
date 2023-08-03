@@ -28,9 +28,6 @@ navTemplate.innerHTML = `
     <div>
         <img class="Icon github-icon" alt="Github">
     </div>
-    <div>
-        <img class="Icon menu-icon" alt="Menu">
-    </div>
 </div>
 `
 
@@ -54,12 +51,8 @@ class navMenu extends HTMLElement {
         const infoIcon = shadowRoot.querySelector('.info-icon');
         infoIcon.src = this.resolveRelativePath('../../Materials/Icon/Info.png');
         infoIcon.addEventListener('click', () => {
-            this.showHideChecker(
-                shadowRoot.getElementById('hoverInfoDiv'),
-                infoIcon,
-                this.resolveRelativePath('../../Materials/Icon/Info-invert.png'),
-                this.resolveRelativePath('../../Materials/Icon/Info.png')
-            );
+            infoIcon.src = this.resolveRelativePath('../../Materials/Icon/Info-invert.png');
+            window.location.href = this.resolveRelativePath('../../Pages/Hello World.html');
         });
 
         const githubIcon = shadowRoot.querySelector('.github-icon');

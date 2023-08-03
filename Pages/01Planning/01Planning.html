@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3BFP82C12P"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-3BFP82C12P');
-    </script>
-
     <meta charset="UTF-8">
+    <link rel="icon" sizes="96x96" href="./Materials/Icon/Home.png">
+    
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/style.css">
 
@@ -113,19 +105,19 @@
             <img src="../../Materials/Icon/zoom-in.png" class="cursorStyle  isoPoint" alt="">
         </div>
 
-        <div id="cursorText1" class="pointerText" style="visibility: visible; opacity: 0;">
+        <div id="cursorText1" class="pointerText" style="visibility: visible; opacity: 0;transform: translate(-200px, -85px)">
             <h1 class="h1-navDir h1-navDir-iso">
                 10-step Plan for Resiliency
             </h1>
         </div>
 
-        <div id="cursorText2" class="pointerText" style="visibility: visible; opacity: 0; transform: translate(-200px, 0);">
+        <div id="cursorText2" class="pointerText" style="visibility: visible; opacity: 0; transform: translate(-200px, -85px);">
             <h1 class="h1-navDir h1-navDir-iso">
                 Tunnel Vision
             </h1>
         </div>
 
-        <div id="cursorText3" class="pointerText" style="visibility: visible; opacity: 0; transform: translate(-200px, 0);">
+        <!-- <div id="cursorText3" class="pointerText" style="visibility: visible; opacity: 0; transform: translate(-200px, 0);">
             <h1 class="h1-navDir h1-navDir-iso">
                 The Showcase
             </h1>
@@ -141,35 +133,13 @@
             <h1 class="h1-navDir h1-navDir-iso">
                 The Showcase
             </h1>
-        </div>
+        </div> -->
 
     </div>
 
 
     <!--  nav menu-->
     <nav-menu></nav-menu>
-
-    <!-- dropdown menu-->
-    <dropdown-menu id="menuDropdown" style="visibility: hidden; opacity: 0;"></dropdown-menu>
-
-    <!-- hover information-->
-    <div id="hoverInfoDiv" class="hoverInfoPos" style="visibility: visible; opacity: 0;">
-
-        <div class="hoverInfoWrapper">
-            <h2>
-                Planning
-            </h2>
-            <h2 class="h2-Dec">
-                <!-- sample text-->
-            </h2>
-            <p class="p-HoverInfo">
-                <!-- sample text-->
-            </p>
-            <p class="p-HoverInfo">
-                <!-- sample text-->
-            </p>
-        </div>
-    </div>
 
 </div>
 
@@ -223,7 +193,7 @@
     cursorShowShy("#hotSpot1-2", document.getElementById("cursorArrow"), document.getElementById("cursorText2"));
     cursorShowShy("#hotSpot1-3", document.getElementById("cursorArrow"), document.getElementById("cursorText3"));
 
-    cursorShowShy("#hotSpot2-1", document.getElementById("cursorArrow"), document.getElementById("cursorText6"));
-    cursorShowShy("#hotSpot2-2", document.getElementById("cursorArrow"), document.getElementById("cursorText2"));
-    cursorShowShy("#hotSpot2-3", document.getElementById("cursorArrow"), document.getElementById("cursorText4"));
+    cursorShowShy("#hotSpot2-1", document.getElementById("cursorArrow"), document.getElementById("cursorText4"));
+    cursorShowShy("#hotSpot2-2", document.getElementById("cursorArrow"), document.getElementById("cursorText5"));
+    cursorShowShy("#hotSpot2-3", document.getElementById("cursorArrow"), document.getElementById("cursorText6"));
 </script>
